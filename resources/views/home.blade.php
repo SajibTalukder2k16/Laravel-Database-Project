@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +9,14 @@
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 16px 32px;
+  height:50px;
+  width:350px;
+  padding: 14px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 4px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
@@ -82,13 +85,35 @@
                 </form>
 
 <br>
-<button class="button button2">UPDATE</button>
+<form action="{{url('join_customer_transaction')}}" method="post">
+                {{csrf_field()}}
+<button class="button button2">Transactions with Customer name</button>
+</form>
 <br>
-<button class="button button3">DELETE</button>
+<form action="{{url('atm_insert')}}" method="post">
+                {{csrf_field()}}
+<button class="button button3">Cash In To atm</button>
+</form>
+<br>
+<form action="{{url('aggregate_function')}}" method="post">
+                {{csrf_field()}}
+<button class="button button4">Transaction Summary</button>
+</form>
 <br>
 <form action="{{url('show_customer_bank_branch')}}" method="post">
                 {{csrf_field()}}
-<button class="button button5">SHOW</button>
+<button class="button button5">SHOW ALL INFO</button>
+<br>
+</form>
+<form action="{{url('search_by_admin')}}" method="post">
+                {{csrf_field()}}
+<button class="button button1">Search</button>
+<br>
+</form>
+<br>
+<form action="{{url('logout')}}" method="post">
+                {{csrf_field()}}
+<button >Log Out</button>
 </form>
 </div>
 </div>

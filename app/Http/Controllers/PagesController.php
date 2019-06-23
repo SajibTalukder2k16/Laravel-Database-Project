@@ -58,6 +58,43 @@ class PagesController extends Controller
     {
         return view('transaction_insertion_code');
     }
+    public function join_customer_transaction()
+    {
+        return view('join_customer_transaction');
+    }
+    public function aggregate_function()
+    {
+        return view('aggregate_function');
+    }
+    public function atm_insert()
+    {
+        return view('atm_insert');
+    }
+    public function atm_insert_action()
+    {
+        return view('atm_insert_action');
+    }
+    public function logout()
+    {
+        return view('logout');
+    }
+    public function search_account()
+    {
+        return view('search_account');
+    }
+    public function search_account_action()
+    {
+        return view('search_account_action');
+    }
+    public function search_by_admin()
+    {
+        return view('search_by_admin');
+    }
+    public function search_by_admin_code()
+    {
+        return view('search_by_admin_code');
+    }
+    
     
     
     

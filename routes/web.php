@@ -23,6 +23,15 @@ Route::post('/customer_data_insert', 'PagesController@customer_data_insert') ;
 Route::post('/show_customer_bank_branch', 'PagesController@show_customer_bank_branch') ;
 Route::post('/transaction_insert', 'PagesController@transaction_insert') ;
 Route::post('/transaction_insertion_code', 'PagesController@transaction_insertion_code') ;
+Route::post('/join_customer_transaction', 'PagesController@join_customer_transaction') ;
+Route::post('/aggregate_function', 'PagesController@aggregate_function') ;
+Route::post('/atm_insert', 'PagesController@atm_insert') ;
+Route::post('/atm_insert_action', 'PagesController@atm_insert_action') ;
+Route::post('/logout', 'PagesController@logout') ;
+Route::post('/search_account', 'PagesController@search_account') ;
+Route::post('/search_account_action', 'PagesController@search_account_action') ;
+Route::post('/search_by_admin', 'PagesController@search_by_admin') ;
+Route::post('/search_by_admin_code', 'PagesController@search_by_admin_code') ;
 
 
 

@@ -2,31 +2,29 @@
 <html>
 <head>
 <title>
-Bank Data insert
+ATM Cash Insert
 </title>
 </head>
 <style>
 label {
   color: green;
-  width:250px;
-  margin:20px;
-  padding: 4px;
+  padding: 8px;
 }
 input[type=text], select {
-  width:300px;
-  padding: 20px 20px;
-  margin: 20px 20px;
+  width: 75%;
+  padding: 12px 12px;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
 input[type=submit] {
-  width: 50%;
+  width: 25%;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px 140px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -46,18 +44,17 @@ div {
 
 
 <div style="width:600px; margin-right:auto; margin-left:auto; border:1px solid #000;">
-<form action="{{url('insert_data_bank_action')}}" method="post">  
+<form action="{{url('atm_insert_action')}}" method="post">  
 		{{ csrf_field() }}
   {{ csrf_field() }}
-    <label for="bk_id">Bank id</label>
-    <input type="text" id="bank_id" name="bank_id" placeholder="1234..">
+    <label for="atm_id">ATM id</label>
+    <br>
+    <input type="text" id="atm_id" name="atm_id" placeholder="1234..">
     <br>
 
-    <label for="bk_name">Bank Name</label>
-    <input type="text" id="bank_name" name="bank_name" placeholder="Janata Bank(kuet corporate)..">
+    <label for="cash_amount">cash_amount</label>
     <br>
-    <label for="location">Location</label>
-    <input type="text" id="location" name="bank_location" placeholder="fulbarigate,khulna..">
+    <input type="text" id="cash_amount" name="cash_amount" placeholder="50000">
     <br>
     <input type="submit" value="Submit">
   </form>
